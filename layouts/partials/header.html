@@ -1,0 +1,13 @@
+<header>
+  <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      {{ range site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
