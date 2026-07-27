@@ -12,11 +12,14 @@ reference material supports the website.
   canonical checklist for recording whether a learner can begin safely and
   which decisions remain open. Complete it only in a private copy outside the
   repository.
+- [`salon-assistant-brief.md`](salon-assistant-brief.md) is a canonical,
+  fictional assistant brief showing boundaries, unimplemented tool proposals,
+  escalation rules, risks, and tests for a generic salon.
 
-No business or provider example is included. Future examples must use
+No real business or provider example is included. Future examples must use
 fictional, non-identifying information and the documented placeholder
-convention. They must link to canonical scripts or templates instead of
-copying complete files.
+convention. They must link to canonical scripts or templates instead of copying
+complete files.
 
 An example must state what is simulated, what remains unverified, how a learner
 can check the expected result, and how to return to the starting state. It must
