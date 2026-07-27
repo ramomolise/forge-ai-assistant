@@ -5,6 +5,9 @@ reference material supports the website.
 
 ## Available material
 
+- [`business-discovery-prompt.md`](business-discovery-prompt.md) is the
+  canonical prompt for producing a structured draft business-assistant brief.
+  Complete it and store its generated output only in a private location.
 - [`project-readiness-checklist.md`](project-readiness-checklist.md) is the
   canonical checklist for recording whether a learner can begin safely and
   which decisions remain open. Complete it only in a private copy outside the
