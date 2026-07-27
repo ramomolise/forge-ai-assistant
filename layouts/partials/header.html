@@ -3,9 +3,16 @@
 
   <nav aria-label="Primary navigation">
     <ul>
+      {{ $currentPage := . }}
       {{ range site.Menus.main }}
         <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ $isCurrent := $currentPage.IsMenuCurrent "main" . }}
+          {{ $isAncestor := $currentPage.HasMenuCurrent "main" . }}
+          <a
+            href="{{ .URL }}"
+            {{ if or $isCurrent $isAncestor }}class="active"{{ end }}
+            {{ if $isCurrent }}aria-current="page"{{ end }}
+          >{{ .Name }}</a>
         </li>
       {{ end }}
     </ul>

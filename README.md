@@ -27,3 +27,29 @@ Run all currently available local checks with:
 ```bash
 make test
 ```
+
+## Tutorial shortcodes
+
+Shortcodes keep recurring tutorial guidance consistent. Use paired opening and
+closing tags for content blocks:
+
+| Shortcode | Purpose | Example |
+| --- | --- | --- |
+| `warning` | Highlights a risk or action requiring care. | `{{</* warning */>}}Check the placeholder.{{</* /warning */>}}` |
+| `security` | Identifies a security consideration. | `{{</* security */>}}Protect the placeholder.{{</* /security */>}}` |
+| `sa-context` | Adds relevant South African context without making unsupported claims. | `{{</* sa-context */>}}Add reviewed context.{{</* /sa-context */>}}` |
+| `command` | Displays a command without executing it. | `{{</* command */>}}placeholder-command{{</* /command */>}}` |
+| `expected-output` | Shows the expected result of a command or check. | `{{</* expected-output */>}}<PLACEHOLDER_OUTPUT>{{</* /expected-output */>}}` |
+| `troubleshooting` | Explains how to investigate a possible problem. | `{{</* troubleshooting */>}}Check <PLACEHOLDER>.{{</* /troubleshooting */>}}` |
+| `rollback` | Describes how to undo or recover from a change. | `{{</* rollback */>}}Restore <PLACEHOLDER>.{{</* /rollback */>}}` |
+
+The `reference-file` shortcode links to canonical material and uses named
+parameters:
+
+```text
+{{</* reference-file path="/reference/" label="<REFERENCE_FILE>" */>}}
+```
+
+Shortcode content may use Markdown. Command and expected-output content is
+rendered as literal text. Keep examples generic, replace placeholders only with
+reviewed values, and do not place credentials in Markdown.

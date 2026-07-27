@@ -1,0 +1,6 @@
+{{- $path := .Get "path" -}}
+{{- $label := .Get "label" | default $path -}}
+<p class="reference-file">
+  <strong>Reference file:</strong>
+  <a href="{{ $path | safeURL }}">{{ $label }}</a>
+</p>
