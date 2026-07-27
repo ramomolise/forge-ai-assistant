@@ -1,4 +1,4 @@
-.PHONY: serve build check-secrets test
+.PHONY: serve build check-secrets check-reference test
 
 serve:
 	hugo server --buildDrafts
@@ -9,4 +9,7 @@ build:
 check-secrets:
 	./scripts/check-secrets.sh
 
-test: check-secrets build
+check-reference:
+	./scripts/validate-reference.sh
+
+test: check-secrets check-reference build

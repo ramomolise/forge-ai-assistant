@@ -2,6 +2,12 @@
 
 Open-source reference implementation for building and operating AI assistants for small businesses.
 
+## Canonical reference material
+
+The [`reference/`](reference/) directory is the canonical home for future
+reviewed scripts, templates, and generic examples. Website tutorials may
+explain or excerpt those files, but must link back to the canonical copy.
+
 ## Repository safety checks
 
 Run the local safety baseline with:
