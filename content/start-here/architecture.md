@@ -167,5 +167,8 @@ procedures all require separate implementation and verification.
 
 ## Return to the learning path
 
-Return to [Start Here](/start-here/) to review the planned curriculum and
-project boundaries.
+If you have not assessed your practical starting point, complete
+[Check whether you are ready for this learning
+project](/start-here/project-readiness/). You can also return to
+[Start Here](/start-here/) to review the planned curriculum and project
+boundaries.

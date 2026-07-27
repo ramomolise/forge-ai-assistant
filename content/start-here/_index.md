@@ -34,8 +34,10 @@ narrowly approved actions, and escalates to a person when necessary.
 This describes the intended learning destination. It does not mean that the
 integration exists or works in the current repository.
 
-Start with [Understand the intended system architecture](architecture/). That
-lesson introduces every major component without setup commands.
+Start with [Check whether you are ready for this learning
+project](project-readiness/), then read
+[Understand the intended system architecture](architecture/). These lessons
+help you plan before any setup work begins.
 
 ## Expected learning path
 
@@ -124,6 +126,6 @@ must not be used as proof that any production system exists or works.
 
 ## Next lesson
 
-Read [Understand the intended system architecture](architecture/) to learn how
-messages, business knowledge, tools, and human escalation are expected to fit
-together.
+Read [Check whether you are ready for this learning
+project](project-readiness/) and complete a private copy of its canonical
+checklist. The lesson then links to the intended system architecture.

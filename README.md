@@ -56,6 +56,14 @@ parameters:
 {{</* reference-file path="/reference/" label="<REFERENCE_FILE>" */>}}
 ```
 
+When a canonical repository file must be downloadable from the generated site,
+use `source` and `download`. Hugo creates the download from the canonical source
+at build time, so no duplicate source file is maintained:
+
+```text
+{{</* reference-file source="reference/examples/<REFERENCE_FILE>" download="downloads/<REFERENCE_FILE>" label="<REFERENCE_LABEL>" */>}}
+```
+
 Shortcode content may use Markdown. Command and expected-output content is
 rendered as literal text. Keep examples generic, replace placeholders only with
 reviewed values, and do not place credentials in Markdown.
