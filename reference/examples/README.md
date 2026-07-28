@@ -5,6 +5,9 @@ reference material supports the website.
 
 ## Available material
 
+- [`vps-preparation-checklist.md`](vps-preparation-checklist.md) is the
+  canonical planning and verification checklist for preparing a Linux VPS
+  without recording real infrastructure or access details.
 - [`assistant-security-review.md`](assistant-security-review.md) is the
   canonical checklist for documenting security boundaries, ownership, control
   status, tests, approvals, and unresolved deployment blockers.
