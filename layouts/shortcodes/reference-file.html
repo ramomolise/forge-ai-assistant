@@ -1,0 +1,12 @@
+{{- $path := .Get "path" -}}
+{{- $source := .Get "source" -}}
+{{- $download := .Get "download" -}}
+{{- if $source -}}
+  {{- $resource := resources.FromString $download (readFile $source) -}}
+  {{- $path = $resource.RelPermalink -}}
+{{- end -}}
+{{- $label := .Get "label" | default $path -}}
+<p class="reference-file">
+  <strong>Reference file:</strong>
+  <a href="{{ $path | safeURL }}">{{ $label }}</a>
+</p>
