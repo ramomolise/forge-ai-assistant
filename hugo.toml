@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://ramomolise.github.io/forge-ai-assistant/"
 languageCode = "en-za"
 title = "Build with Hermes ZA"
 defaultContentLanguage = "en"
@@ -9,7 +9,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Practical tutorials for South African entrepreneurs building simple AI assistants with Hermes."
-  githubRepository = "https://github.com/YOUR_GITHUB_USERNAME/forge-ai-assistant"
+  githubRepository = "https://github.com/ramomolise/forge-ai-assistant"
 
 [markup]
   [markup.highlight]
