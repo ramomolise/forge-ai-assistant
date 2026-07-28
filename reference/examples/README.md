@@ -5,6 +5,9 @@ reference material supports the website.
 
 ## Available material
 
+- [`release-readiness-checklist.md`](release-readiness-checklist.md) is the
+  canonical final human-review gate for sources, tests, security, accessibility,
+  production blockers, and deployment approval.
 - [`testing-operations-recovery-checklist.md`](testing-operations-recovery-checklist.md)
   is the canonical plan for synthetic conversations, health and log review,
   redaction, session expiry, incidents, backups, restore tests, and rollback.
