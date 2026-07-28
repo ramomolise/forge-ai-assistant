@@ -5,6 +5,9 @@ reference material supports the website.
 
 ## Available material
 
+- [`scoped-tool-design-checklist.md`](scoped-tool-design-checklist.md) is the
+  canonical checklist for a one-purpose tool with explicit inputs, read-only
+  defaults, approvals, failure limits, and abuse tests.
 - [`cloudflare-tunnel-review.md`](cloudflare-tunnel-review.md) is the
   canonical planning checklist for a single public hostname, local service
   boundary, sensitive tunnel credential, verification, disabling, and rollback.
