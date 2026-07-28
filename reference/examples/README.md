@@ -5,6 +5,9 @@ reference material supports the website.
 
 ## Available material
 
+- [`model-business-knowledge-review.md`](model-business-knowledge-review.md)
+  is the canonical provider-neutral review for model access, identity,
+  approved facts, uncertainty, escalation, and synthetic testing.
 - [`vps-preparation-checklist.md`](vps-preparation-checklist.md) is the
   canonical planning and verification checklist for preparing a Linux VPS
   without recording real infrastructure or access details.
