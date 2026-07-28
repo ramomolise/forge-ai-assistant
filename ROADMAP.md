@@ -10,18 +10,15 @@
 - VPS and verified Hermes installation guidance
 - model and business-knowledge design
 - Cloudflare Tunnel security design
+- WhatsApp Business Cloud API and webhook documentation
 - scoped-tool design
 - testing, operations, backup, and rollback planning
 - non-deploying repository checks and release-readiness guidance
 
-## Blocked
-
-- WhatsApp Cloud API and webhook design requires current, accessible official
-  Meta documentation and a policy review for the intended small-business use.
-
 ## Owner-reviewed future work
 
-- resolve the Meta documentation and policy blocker
+- recheck current Meta dashboards, policies, limits, and requirements before
+  an authorised non-production WhatsApp integration test
 - pin and test supported Hermes configuration for least privilege
 - independently test installation, model, webhook, tunnel, tool, backup,
   restore, and rollback procedures in a non-production environment

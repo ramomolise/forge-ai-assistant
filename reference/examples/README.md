@@ -17,6 +17,10 @@ reference material supports the website.
 - [`cloudflare-tunnel-review.md`](cloudflare-tunnel-review.md) is the
   canonical planning checklist for a single public hostname, local service
   boundary, sensitive tunnel credential, verification, disabling, and rollback.
+- [`whatsapp-cloud-setup-review.md`](whatsapp-cloud-setup-review.md) is the
+  canonical review for Meta and Hermes readiness, credentials, webhook
+  validation, separate recipient controls, adapter limits, synthetic tests,
+  escalation, and rollback.
 - [`model-business-knowledge-review.md`](model-business-knowledge-review.md)
   is the canonical provider-neutral review for model access, identity,
   approved facts, uncertainty, escalation, and synthetic testing.

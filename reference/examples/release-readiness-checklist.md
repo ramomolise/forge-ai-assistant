@@ -48,13 +48,19 @@ not approve deployment.
 
 - [ ] Installation was tested in an authorised non-production environment.
 - [ ] Model, webhook, tunnel, and tool boundaries were tested with synthetic data.
+- [ ] The WhatsApp Cloud review records separate Meta recipient and Hermes
+      incoming-user controls, signature validation, adapter limitations, and
+      failure tests.
 - [ ] Backups and an isolated restore test have reviewed evidence.
 - [ ] Rollback and service-restart procedures have reviewed evidence.
 - [ ] Incident and maintenance owners are assigned.
 
 ## Deployment blockers
 
-- [ ] Current official Meta documentation and policy review are complete.
+- [ ] Current Meta dashboards, policies, limits, and requirements were rechecked
+      before the authorised non-production test.
+- [ ] The WhatsApp Cloud integration has reviewed non-production evidence and
+      no unresolved blocker in its canonical setup review.
 - [ ] The owner has supplied and approved the public project URL.
 - [ ] The placeholder `baseURL` has been replaced through a reviewed change.
 - [ ] The first production deployment has explicit human approval.

@@ -24,6 +24,10 @@ The independent [Cloudflare Tunnel security design](cloudflare-tunnel-security/)
 explains how a future public webhook could reach one local service without
 publishing the Hermes gateway directly.
 
+Then read [Connect Hermes to WhatsApp Business Cloud API](whatsapp-cloud-webhook/)
+to review the Hermes wizard, Meta webhook boundary, explicit incoming-user
+allowlist, current adapter limitations, safe testing, and rollback.
+
 Use [Design one narrowly scoped tool](design-scoped-tool/) to turn one approved
 business outcome into a permission-limited, testable tool proposal.
 
