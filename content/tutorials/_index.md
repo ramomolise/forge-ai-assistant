@@ -26,3 +26,6 @@ publishing the Hermes gateway directly.
 
 Use [Design one narrowly scoped tool](design-scoped-tool/) to turn one approved
 business outcome into a permission-limited, testable tool proposal.
+
+Finish the design path with [Plan testing, operations, and
+recovery](testing-operations-recovery/) before any production review.

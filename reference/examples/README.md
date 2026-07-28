@@ -5,6 +5,9 @@ reference material supports the website.
 
 ## Available material
 
+- [`testing-operations-recovery-checklist.md`](testing-operations-recovery-checklist.md)
+  is the canonical plan for synthetic conversations, health and log review,
+  redaction, session expiry, incidents, backups, restore tests, and rollback.
 - [`scoped-tool-design-checklist.md`](scoped-tool-design-checklist.md) is the
   canonical checklist for a one-purpose tool with explicit inputs, read-only
   defaults, approvals, failure limits, and abuse tests.
