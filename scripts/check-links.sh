@@ -13,10 +13,23 @@ trap cleanup EXIT
 
 hugo --environment production --buildDrafts=false --destination "$build_dir" >/dev/null
 
+base_url="$(hugo config | sed -n "s/^baseurl = '\\(.*\\)'$/\\1/p")"
+base_without_scheme="${base_url#*://}"
+base_path="/${base_without_scheme#*/}"
+
 risk_found=0
 while IFS= read -r href; do
   clean_path="${href%%#*}"
   clean_path="${clean_path%%\?*}"
+
+  if [[ "$base_path" != "/" && "$clean_path" == "$base_path"* ]]; then
+    clean_path="/${clean_path#"$base_path"}"
+  elif [[ "$base_path" != "/" ]]; then
+    printf 'Broken rendered internal link outside base path: %s\n' "$href" >&2
+    risk_found=1
+    continue
+  fi
+
   target="$build_dir$clean_path"
 
   if [[ -d "$target" ]]; then
