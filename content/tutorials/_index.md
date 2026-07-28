@@ -19,3 +19,7 @@ the software's broad default capabilities and the proposed hardening work.
 
 Then [Design model and business-knowledge boundaries](model-and-business-knowledge/)
 before adding provider credentials or business facts.
+
+The independent [Cloudflare Tunnel security design](cloudflare-tunnel-security/)
+explains how a future public webhook could reach one local service without
+publishing the Hermes gateway directly.
