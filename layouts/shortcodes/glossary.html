@@ -1,0 +1,6 @@
+<dl class="glossary">
+  {{- range sort site.Data.glossary "term" -}}
+  <dt id="{{ .term | anchorize }}">{{ .term }}</dt>
+  <dd>{{ .definition }}</dd>
+  {{- end -}}
+</dl>
