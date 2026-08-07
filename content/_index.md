@@ -9,6 +9,8 @@ answer common questions and hand important decisions back to a person.
 
 {{< home-actions >}}
 
+{{< forge-preview >}}
+
 ## What you will build
 
 - An assistant that answers approved business questions
