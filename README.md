@@ -1,69 +1,96 @@
-# forge-ai-assistant
+# Forge AI Assistant
 
-Open-source reference implementation for building and operating AI assistants for small businesses.
+Forge AI Assistant is an open-source learning project for South African
+entrepreneurs who want to understand how a focused, secure AI assistant can be
+designed, tested and operated around WhatsApp-first customer communication.
 
-## Canonical reference material
+The project is informed by a real private closed beta at Motion Foundry Dance
+Academy (MFDA). The public repository contains the Hugo educational site,
+sanitised lessons, synthetic examples and reusable review material—not the live
+MFDA implementation.
 
-The [`reference/`](reference/) directory is the canonical home for future
-reviewed scripts, templates, and generic examples. Website tutorials may
-explain or excerpt those files, but must link back to the canonical copy.
+## The three names
 
-## Repository safety checks
+- **Forge** is the working WhatsApp assistant privately tested by MFDA.
+- **Hermes** is the underlying agent software that coordinates approved
+  knowledge and limited tools.
+- **Build with Hermes ZA** is the educational learning path within the wider
+  Forge project.
 
-Run the local safety baseline with:
+The assistant core may run on infrastructure managed by its operator, while
+WhatsApp Cloud API and other external messaging or infrastructure providers
+remain part of the complete system.
+
+## Current status
+
+**Closed beta — August 2026.** Forge is undergoing private testing. Generic
+reusable components will be added only after beta findings are sanitised,
+reviewed and safe to share. No production deployment, customer data, complete
+private configuration or independently verified generic implementation is
+claimed here.
+
+- [Read the deployed learning site](https://ramomolise.github.io/forge-ai-assistant/)
+- [Read the sanitised MFDA Forge case study](https://ramomolise.github.io/forge-ai-assistant/business-examples/mfda-forge-beta/)
+
+## Run the site locally
+
+Install a compatible extended Hugo release, clone the repository, then run:
 
 ```bash
-make check-secrets
+make serve
 ```
 
-The checker examines files tracked by Git. It rejects sensitive filenames, such
-as environment files, private keys, operational reports, Hermes state, logs,
-memories, and local databases. It also reports tracked text files that match a
-small set of common credential formats. Reports identify filenames only and do
-not print the suspected secret values.
+Hugo prints the local preview address. The development server includes drafts;
+stop it with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-This is a precaution, not a guarantee that the repository contains no secrets.
-Pattern matching can miss unknown, encoded, split, or unusual credentials, and
-the checker does not inspect untracked files or the full Git history. Review
-changes before committing, keep private VPS evidence outside the repository,
-and use a dedicated history-aware scanner before publishing.
+Create the production build with:
 
-Run all currently available local checks with:
+```bash
+make build
+```
+
+Generated `public/` output and `.hugo_build.lock` are local artefacts and must
+not be committed.
+
+## Test changes
+
+Run the complete local baseline:
 
 ```bash
 make test
 ```
 
+This checks tracked filenames and common credential patterns, canonical
+reference links, shell syntax, production and draft-free Hugo builds, rendered
+internal links and heading order. It reduces risk but does not prove a deployment
+is secure or scan every possible secret format.
+
+## Repository boundaries
+
+The [`content/`](content/) directory is the teaching layer. The
+[`reference/`](reference/) directory is the canonical home for reviewed generic
+scripts, templates, checklists and examples as they become safe to publish.
+Tutorials should link to canonical reference files instead of duplicating them.
+
+Never commit customer conversations or personal information, production prompts
+or configuration, credentials, phone numbers, private endpoints, databases,
+server logs, private locations or VPS evidence. Use obvious fictional names and
+placeholders in public examples.
+
+## Contribute
+
+Read [`CONTRIBUTING.md`](CONTRIBUTING.md), [`AGENTS.md`](AGENTS.md) and the
+relevant content and reference files before editing. Keep changes focused, run
+`make test`, explain commands for beginner readers and preserve verification,
+rollback, least-privilege and human-handover boundaries.
+
 ## Tutorial shortcodes
 
-Shortcodes keep recurring tutorial guidance consistent. Use paired opening and
-closing tags for content blocks:
+Recurring tutorial guidance uses paired Hugo shortcodes: `warning`, `security`,
+`sa-context`, `command`, `expected-output`, `troubleshooting` and `rollback`.
+The `reference-file` shortcode links a tutorial to canonical repository material.
+See existing pages for reviewed examples and keep all values generic.
 
-| Shortcode | Purpose | Example |
-| --- | --- | --- |
-| `warning` | Highlights a risk or action requiring care. | `{{</* warning */>}}Check the placeholder.{{</* /warning */>}}` |
-| `security` | Identifies a security consideration. | `{{</* security */>}}Protect the placeholder.{{</* /security */>}}` |
-| `sa-context` | Adds relevant South African context without making unsupported claims. | `{{</* sa-context */>}}Add reviewed context.{{</* /sa-context */>}}` |
-| `command` | Displays a command without executing it. | `{{</* command */>}}placeholder-command{{</* /command */>}}` |
-| `expected-output` | Shows the expected result of a command or check. | `{{</* expected-output */>}}<PLACEHOLDER_OUTPUT>{{</* /expected-output */>}}` |
-| `troubleshooting` | Explains how to investigate a possible problem. | `{{</* troubleshooting */>}}Check <PLACEHOLDER>.{{</* /troubleshooting */>}}` |
-| `rollback` | Describes how to undo or recover from a change. | `{{</* rollback */>}}Restore <PLACEHOLDER>.{{</* /rollback */>}}` |
+## Licence
 
-The `reference-file` shortcode links to canonical material and uses named
-parameters:
-
-```text
-{{</* reference-file path="/reference/" label="<REFERENCE_FILE>" */>}}
-```
-
-When a canonical repository file must be downloadable from the generated site,
-use `source` and `download`. Hugo creates the download from the canonical source
-at build time, so no duplicate source file is maintained:
-
-```text
-{{</* reference-file source="reference/examples/<REFERENCE_FILE>" download="downloads/<REFERENCE_FILE>" label="<REFERENCE_LABEL>" */>}}
-```
-
-Shortcode content may use Markdown. Command and expected-output content is
-rendered as literal text. Keep examples generic, replace placeholders only with
-reviewed values, and do not place credentials in Markdown.
+See [`LICENSE`](LICENSE).

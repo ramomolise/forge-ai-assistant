@@ -1,12 +1,17 @@
-# Intended system architecture
+# Forge AI Assistant architecture
 
 This document records the canonical conceptual architecture for contributors.
 It must stay consistent with the public
 [architecture lesson](content/start-here/architecture.md).
 
-The architecture is a target for future educational and reference material. It
-does not describe a verified deployment, and it is not evidence that any
-integration currently works.
+This public architecture explains the intended reusable pattern taught through
+Build with Hermes ZA. Forge provides a real, private MFDA beta case study, but
+its live topology, configuration and operational evidence are not reproduced
+here. The generic architecture still requires independent end-to-end testing.
+
+The assistant core is intended to run on infrastructure managed by the
+operator. The complete system is not fully self-hosted: WhatsApp Cloud API, an
+AI model and other external providers may handle information where required.
 
 ## Intended message flow
 
@@ -23,8 +28,9 @@ integration currently works.
    another authorised person.
 8. Any response returns through the approved messaging path.
 
-Every step above is intended behaviour and remains unverified until supported
-by reviewed implementation material and tests.
+The private beta has informed this flow, but each public generic implementation
+step remains unverified until supported by reviewed reusable material and
+independent tests.
 
 ## Component responsibilities
 
@@ -58,9 +64,10 @@ maintenance, backup, and recovery requirements through testing.
 
 ### Hermes
 
-The intended assistant coordinator. Its exact installation, configuration,
-gateway, model, memory, session, tool, and hardening behaviour is not yet
-documented or verified in this repository.
+The underlying agent software that coordinates assistant instructions, approved
+knowledge, model access and limited tools. The tutorials document reviewed
+concepts and upstream behaviour, but the private Forge configuration is not in
+this repository and a generic configuration remains planned.
 
 ### AI model
 
@@ -113,9 +120,10 @@ numbers, and private VPS evidence must not enter the repository.
 - Privacy discussion raises practical considerations without making legal
   claims.
 
-## Deferred implementation
+## Public implementation boundary
 
-The repository does not yet contain verified configuration or procedures for
-WhatsApp Cloud API, a webhook, Cloudflare Tunnel, a VPS, Hermes, an AI model,
-business knowledge, tools, escalation, backup, recovery, or end-to-end message
-delivery.
+The repository contains educational procedures and review checklists for these
+components. It does not contain the complete MFDA implementation or a fully
+independently verified generic stack. Production prompts, customer data,
+credentials, phone numbers, endpoints, databases, logs, private locations and
+server evidence remain outside the repository.
