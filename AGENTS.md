@@ -236,18 +236,18 @@ Avoid:
 
 ## Website information architecture
 
-Organise the website around these main sections:
+Keep the beginner journey to four primary destinations:
 
 ```text
-Start Here
-Tutorials
-Concepts
-Prompt Library
-Business Examples
-Security
-Reference
-About
+Home
+Set Up
+Prompts
+Examples
 ```
+
+Concepts, Security, Reference, About and GitHub are secondary destinations.
+Link them from the footer, relevant “Learn more” links or optional expandable
+explanations. Do not make advanced material compete with the beginner journey.
 
 ## Start Here section
 
@@ -710,7 +710,25 @@ Keep shortcodes simple and documented.
 
 Use clear South African English.
 
-Keep paragraphs relatively short.
+Teach progressively: first say what the reader can build, then give one action,
+show how to check it and offer deeper explanation only when requested. The main
+pages should feel like a calm teacher rather than a technical manual.
+
+Keep paragraphs to no more than three sentences in most cases. Lead with the
+point, use direct verbs and define a necessary technical term immediately.
+Keep actions and checks visible; place optional reasoning in semantic,
+collapsed `<details>` sections.
+
+Apply these content budgets:
+
+* homepage: no more than 300 visible words
+* MFDA example: no more than 350 visible words
+* each additional example: no more than 350 visible words
+* primary navigation: exactly four items
+* one primary action per page section
+
+Navigation, footer text and complete prompt text do not count against the
+explanatory word budgets.
 
 Explain technical terms when they first appear.
 

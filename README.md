@@ -30,7 +30,22 @@ private configuration or independently verified generic implementation is
 claimed here.
 
 - [Read the deployed learning site](https://ramomolise.github.io/forge-ai-assistant/)
-- [Read the sanitised MFDA Forge case study](https://ramomolise.github.io/forge-ai-assistant/business-examples/mfda-forge-beta/)
+- [Start the single setup journey](https://ramomolise.github.io/forge-ai-assistant/tutorials/)
+- [See the consolidated examples](https://ramomolise.github.io/forge-ai-assistant/business-examples/)
+
+## Beginner journey
+
+The public site keeps four destinations in its primary navigation:
+
+1. **Home** explains the useful outcome.
+2. **Set Up** gives one sequential path with an action and check at every step.
+3. **Prompts** provides six complete planning prompts on one page.
+4. **Examples** compares the real sanitised MFDA pattern with fictional small
+   businesses.
+
+Concepts, Security, Reference, About and GitHub remain available as optional
+depth from the footer and contextual links. Detailed tutorial URLs remain live
+as advanced material.
 
 ## Run the site locally
 
@@ -62,8 +77,8 @@ make test
 
 This checks tracked filenames and common credential patterns, canonical
 reference links, shell syntax, production and draft-free Hugo builds, rendered
-internal links and heading order. It reduces risk but does not prove a deployment
-is secure or scan every possible secret format.
+internal links, heading order and beginner-page content budgets. It reduces risk
+but does not prove a deployment is secure or scan every possible secret format.
 
 ## Repository boundaries
 
@@ -89,7 +104,9 @@ rollback, least-privilege and human-handover boundaries.
 Recurring tutorial guidance uses paired Hugo shortcodes: `warning`, `security`,
 `sa-context`, `command`, `expected-output`, `troubleshooting` and `rollback`.
 The `reference-file` shortcode links a tutorial to canonical repository material.
-See existing pages for reviewed examples and keep all values generic.
+The `details` shortcode keeps optional explanations collapsed while actions and
+checks stay visible. See existing pages for reviewed examples and keep all
+values generic.
 
 ## Licence
 

@@ -1,4 +1,4 @@
-.PHONY: serve build build-draft-free check-secrets check-reference check-shell check-links check-headings test
+.PHONY: serve build build-draft-free check-secrets check-reference check-shell check-links check-headings check-content-budgets test
 
 serve:
 	hugo server --buildDrafts
@@ -24,4 +24,7 @@ check-links:
 check-headings:
 	./scripts/check-headings.sh
 
-test: check-secrets check-reference check-shell build build-draft-free check-links check-headings
+check-content-budgets:
+	./scripts/check-content-budgets.sh
+
+test: check-secrets check-reference check-shell build build-draft-free check-links check-headings check-content-budgets

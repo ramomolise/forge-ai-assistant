@@ -13,6 +13,8 @@ customer data have been published.
   API review, scoped tools, testing, operations and recovery
 - glossary, security boundaries, prompt guidance and synthetic business example
 - sanitised MFDA Forge closed-beta case study
+- four-page beginner journey with consolidated setup, prompts and examples
+- automated beginner content-budget checks
 - GitHub Pages build and deployment workflow, subject to project review controls
 
 ## Current closed-beta learning and sanitisation
