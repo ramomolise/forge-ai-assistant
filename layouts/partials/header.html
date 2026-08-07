@@ -1,8 +1,17 @@
-<header>
-  <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="Forge AI Assistant home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" focusable="false">
+          <path d="M7 24.5 13.2 7h11.6l-2.1 5.5h-6.3l-1.2 3.3h5.5l-2 5.2h-5.4L12 24.5Z" fill="currentColor"/>
+          <path d="m22.8 18.8 1.2 2.3 2.4 1.2-2.4 1.2-1.2 2.4-1.2-2.4-2.4-1.2 2.4-1.2Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand__name"><strong>Forge</strong><small>AI Assistant</small></span>
+    </a>
 
-  <nav aria-label="Primary navigation">
-    <ul>
+    <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+      <ul class="site-nav__main">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
         <li>
@@ -15,6 +24,23 @@
           >{{ .Name }}</a>
         </li>
       {{ end }}
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+
+    <a class="header-github" href="{{ site.Params.githubRepository }}">GitHub <span aria-hidden="true">↗</span></a>
+
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav aria-label="Mobile navigation">
+        <ul>
+          {{ range site.Menus.main }}
+            {{ $isCurrent := $currentPage.IsMenuCurrent "main" . }}
+            {{ $isAncestor := $currentPage.HasMenuCurrent "main" . }}
+            <li><a href="{{ .URL }}"{{ if or $isCurrent $isAncestor }} class="active"{{ end }}{{ if $isCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+          {{ end }}
+          <li><a href="{{ site.Params.githubRepository }}">GitHub ↗</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
 </header>

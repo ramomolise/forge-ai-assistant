@@ -27,12 +27,13 @@ treated as design constraints.
 
 ## What you are working towards
 
-The planned outcome is a limited business assistant that receives customer
+The learning outcome is a limited business assistant that receives customer
 messages through WhatsApp, uses reviewed business knowledge, performs only
 narrowly approved actions, and escalates to a person when necessary.
 
-This describes the intended learning destination. It does not mean that the
-integration exists or works in the current repository.
+Forge demonstrates this pattern in a private MFDA closed beta. The public guide
+teaches the pattern but does not publish that live configuration or claim that
+a generic deployment has been independently verified.
 
 Start with [Check whether you are ready for this learning
 project](project-readiness/), then read
@@ -54,8 +55,9 @@ The curriculum is expected to progress through these stages:
 9. Test normal, confusing, and hostile conversations.
 10. Learn operation, monitoring, backup, rollback, and recovery.
 
-Most of these stages are future work. They must not be treated as verified
-instructions until the relevant lessons, reference files, and tests exist.
+The current tutorials cover these stages at different levels of maturity. Read
+each lesson's verification notes and do not treat design guidance as proof that
+your own integration works.
 
 ## Accounts and infrastructure
 
@@ -107,22 +109,23 @@ The `reference/` directory is intended to become the canonical implementation
 layer for reusable scripts, templates, and examples. Tutorials should link to
 those files instead of duplicating complete scripts or large configurations.
 
-At present, the website foundation exists, but the canonical reference
-directory and implementation material do not.
+The reference directory currently contains reviewed checklists and examples.
+Generic executable implementation material remains planned and will be
+published only after sanitisation and independent testing.
 
 ## Current limitations
 
 {{< troubleshooting >}}
-This repository does not currently provide a verified Hermes installation,
-WhatsApp integration, public webhook, Cloudflare Tunnel, AI model connection,
-business tool, backup process, or production deployment. Treat descriptions of
-these components as educational architecture until implementation material is
-added and independently tested.
+This repository provides reviewed educational guidance but not the private MFDA
+configuration or a complete, independently verified generic deployment. Treat
+commands and architecture as learning material until you verify them in an
+authorised non-production environment.
 {{< /troubleshooting >}}
 
-The project also does not yet provide complete tutorials, provider requirement
-checks, dated cost estimates, business examples, or operational evidence. It
-must not be used as proof that any production system exists or works.
+Provider details and costs can change, reusable implementation components remain
+planned, and private operational evidence is deliberately excluded. The public
+case study confirms a closed beta exists; it is not proof that another system
+will work safely.
 
 ## Next lesson
 

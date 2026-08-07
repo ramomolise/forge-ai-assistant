@@ -1,51 +1,33 @@
 ---
-title: "Build with Hermes ZA"
-description: "Learn how the parts of a simple, secure AI assistant fit together before following future build guidance."
+title: "Build a WhatsApp AI assistant for your small business"
+description: "A calm, practical guide to building a focused WhatsApp assistant for a small business."
 ---
 
-This project teaches South African entrepreneurs how the parts of a practical
-AI assistant fit together. It starts with plain-English explanations, then will
-progress towards reviewed tutorials and reusable reference material.
+Forge is the assistant built for Motion Foundry Dance Academy. This guide uses
+that experience to show other small-business owners how a focused assistant can
+answer common questions and hand important decisions back to a person.
 
-It is intended for small-business owners and operators who use WhatsApp to
-communicate with customers and may have little experience with Linux, servers,
-APIs, or AI systems.
+{{< home-actions >}}
 
-## What you will eventually build
+{{< forge-preview >}}
 
-The planned learning path leads towards a narrowly scoped assistant that can
-receive a customer message through WhatsApp, use approved business information,
-call only approved business tools, and hand the conversation to a person when
-it cannot help safely.
+## What you will build
 
-This is the intended outcome of the curriculum. The repository does not yet
-contain a complete or verified implementation.
+- An assistant that answers approved business questions
+- A safe way to collect customer requests
+- A handover when a person needs to take over
 
-{{< expected-output >}}
-After the foundational lessons, you should be able to describe each part of the intended system and explain where customer data, credentials, and business decisions require protection.
-{{< /expected-output >}}
+## How the guide works
 
-## What this project is
+1. **Set up the assistant.** Follow one step at a time and check each result.
+2. **Add your business instructions.** Decide what it may say and do.
+3. **Test it before customers use it.** Try ordinary, unclear and difficult
+   questions.
 
-This repository contains two connected learning resources:
+You do not need to be a programmer. Each step explains what you are doing, what
+to enter and how to check that it worked.
 
-- a Hugo website containing explanations and tutorials
-- a reference area that will contain reviewed templates and examples
+Forge is currently being tested privately with Motion Foundry Dance Academy.
 
-The repository is an educational open-source project. It is not a hosted
-assistant service, and it does not connect your business to any external
-provider.
-
-{{< security >}}
-Never add production credentials, customer information, private server reports,
-or VPS command histories to this repository. Private evidence must stay outside
-Git and must be sanitised, generalised, and independently verified before it
-influences public documentation.
-{{< /security >}}
-
-## Begin with the system map
-
-Go to [Start Here](/start-here/) for the audience, prerequisites, boundaries,
-and planned learning path. Then read
-[Understand the intended system architecture](/start-here/architecture/) to see
-how the customer-facing and technical parts are expected to relate.
+Forge is the working example, Hermes is the software behind it, and this
+website is the guide.

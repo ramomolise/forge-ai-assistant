@@ -1,5 +1,16 @@
-<footer>
-  <p>
-    Practical AI education for South African entrepreneurs.
-  </p>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <strong>Forge AI Assistant</strong>
+      <p><span>Build with Hermes ZA</span> · Practical AI education for South African entrepreneurs.</p>
+    </div>
+    <nav aria-label="More project information">
+      <a href="{{ "concepts/" | relURL }}">Concepts</a>
+      <a href="{{ "security/" | relURL }}">Security</a>
+      <a href="{{ "reference/" | relURL }}">Reference</a>
+      <a href="{{ "about/" | relURL }}">About</a>
+      <a href="{{ site.Params.githubRepository }}">GitHub</a>
+    </nav>
+    <p class="site-footer__boundary">Educational material, not a hosted assistant service. <a href="{{ site.Params.githubRepository }}/blob/main/LICENSE">Licence</a> · <a href="{{ site.Params.githubRepository }}/blob/main/CREDITS.md">Visual credits</a></p>
+  </div>
 </footer>

@@ -2,7 +2,15 @@
 
 ## Project identity
 
-This repository is an educational Hugo website and open-source reference project for South African entrepreneurs who want to build simple, secure AI assistants using Hermes.
+This repository is the public home of **Forge AI Assistant**, an educational Hugo website and open-source reference project for South African entrepreneurs who want to build simple, secure AI assistants using Hermes.
+
+Use the three project names consistently:
+
+* **Forge** is the working AI WhatsApp assistant privately tested by Motion Foundry Dance Academy.
+* **Hermes** is the underlying agent software that coordinates approved knowledge and limited tools.
+* **Build with Hermes ZA** is the educational learning path within the wider Forge AI Assistant project.
+
+The public repository contains the learning site and sanitised reusable material. It does not contain the complete private MFDA deployment. Describe the intended core as self-hosted or operator-managed only when also making clear that external messaging and infrastructure providers remain involved.
 
 The project produces two connected outputs:
 
@@ -217,6 +225,28 @@ The website must remain usable on:
 
 Keep pages lightweight.
 
+## Visual system
+
+Use the dark Forge theme across the website. Its four-item primary navigation,
+near-black background, restrained purple illumination, original Forge mark and
+synthetic conversation preview form the public visual identity.
+
+The visual direction is inspired by the Ascend marketplace template, but the
+implementation must remain original. Do not copy third-party HTML, CSS, logos,
+screenshots, wording, fonts, hosted assets or runtime code. Keep the public
+attribution in `CREDITS.md` accurate.
+
+Do not add fake SaaS content such as prices, testimonials, client logos, usage
+statistics or product dashboards. Beginner clarity takes priority over visual
+spectacle, and the homepage content budget remains enforced.
+
+Effects must be lightweight, static where practical, pointer-transparent and
+accessible. Do not add an external font, icon or JavaScript dependency without
+strong justification. Every visual component must work with keyboard input and
+on mobile widths down to approximately 320 pixels. The Forge mark and
+conversation preview must use code-native graphics and obviously synthetic
+information only.
+
 Avoid:
 
 * autoplay video
@@ -228,18 +258,18 @@ Avoid:
 
 ## Website information architecture
 
-Organise the website around these main sections:
+Keep the beginner journey to four primary destinations:
 
 ```text
-Start Here
-Tutorials
-Concepts
-Prompt Library
-Business Examples
-Security
-Reference
-About
+Home
+Set Up
+Prompts
+Examples
 ```
+
+Concepts, Security, Reference, About and GitHub are secondary destinations.
+Link them from the footer, relevant “Learn more” links or optional expandable
+explanations. Do not make advanced material compete with the beginner journey.
 
 ## Start Here section
 
@@ -702,7 +732,25 @@ Keep shortcodes simple and documented.
 
 Use clear South African English.
 
-Keep paragraphs relatively short.
+Teach progressively: first say what the reader can build, then give one action,
+show how to check it and offer deeper explanation only when requested. The main
+pages should feel like a calm teacher rather than a technical manual.
+
+Keep paragraphs to no more than three sentences in most cases. Lead with the
+point, use direct verbs and define a necessary technical term immediately.
+Keep actions and checks visible; place optional reasoning in semantic,
+collapsed `<details>` sections.
+
+Apply these content budgets:
+
+* homepage: no more than 300 visible words
+* MFDA example: no more than 350 visible words
+* each additional example: no more than 350 visible words
+* primary navigation: exactly four items
+* one primary action per page section
+
+Navigation, footer text and complete prompt text do not count against the
+explanatory word budgets.
 
 Explain technical terms when they first appear.
 
