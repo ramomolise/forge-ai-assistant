@@ -110,4 +110,5 @@ values generic.
 
 ## Licence
 
-See [`LICENSE`](LICENSE).
+See [`LICENSE`](LICENSE). Visual-direction attribution is recorded in
+[`CREDITS.md`](CREDITS.md).

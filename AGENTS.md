@@ -225,6 +225,28 @@ The website must remain usable on:
 
 Keep pages lightweight.
 
+## Visual system
+
+Use the dark Forge theme across the website. Its four-item primary navigation,
+near-black background, restrained purple illumination, original Forge mark and
+synthetic conversation preview form the public visual identity.
+
+The visual direction is inspired by the Ascend marketplace template, but the
+implementation must remain original. Do not copy third-party HTML, CSS, logos,
+screenshots, wording, fonts, hosted assets or runtime code. Keep the public
+attribution in `CREDITS.md` accurate.
+
+Do not add fake SaaS content such as prices, testimonials, client logos, usage
+statistics or product dashboards. Beginner clarity takes priority over visual
+spectacle, and the homepage content budget remains enforced.
+
+Effects must be lightweight, static where practical, pointer-transparent and
+accessible. Do not add an external font, icon or JavaScript dependency without
+strong justification. Every visual component must work with keyboard input and
+on mobile widths down to approximately 320 pixels. The Forge mark and
+conversation preview must use code-native graphics and obviously synthetic
+information only.
+
 Avoid:
 
 * autoplay video
