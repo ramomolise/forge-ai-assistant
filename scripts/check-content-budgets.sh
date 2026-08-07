@@ -62,6 +62,7 @@ risk_found=0
 assert_maximum "Homepage" "$(count_visible_words content/_index.md)" 300 || risk_found=1
 assert_maximum "Set Up page" "$(count_visible_words content/tutorials/_index.md)" 1800 || risk_found=1
 assert_maximum "Prompts explanation" "$(count_visible_words content/prompt-library/_index.md)" 800 || risk_found=1
+assert_maximum "Examples page" "$(count_visible_words content/business-examples/_index.md)" 1200 || risk_found=1
 assert_maximum "MFDA example" "$(count_visible_words "$temporary_dir/mfda.md")" 350 || risk_found=1
 assert_maximum "Salon example" "$(count_visible_words "$temporary_dir/salon.md")" 350 || risk_found=1
 assert_maximum "Repair-service example" "$(count_visible_words "$temporary_dir/repair.md")" 350 || risk_found=1
