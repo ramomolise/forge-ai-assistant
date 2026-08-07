@@ -20,19 +20,6 @@
         </li>
       {{ end }}
       </ul>
-      <div class="site-nav__utility">
-        <details class="more-menu">
-          <summary>Learn more</summary>
-          <ul>
-            {{ range site.Menus.more }}
-              {{ $isCurrent := $currentPage.IsMenuCurrent "more" . }}
-              {{ $isAncestor := $currentPage.HasMenuCurrent "more" . }}
-              <li><a href="{{ .URL }}"{{ if or $isCurrent $isAncestor }} class="active"{{ end }}{{ if $isCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
-            {{ end }}
-          </ul>
-        </details>
-        <a class="github-link" href="{{ site.Params.githubRepository }}">GitHub<span class="visually-hidden"> repository</span> ↗</a>
-      </div>
     </nav>
   </div>
 </header>

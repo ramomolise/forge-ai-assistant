@@ -22,41 +22,21 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name = "Start"
-    pageRef = "/start-here"
+    name = "Home"
+    pageRef = "/"
     weight = 10
 
   [[menu.main]]
-    name = "Build"
+    name = "Set Up"
     pageRef = "/tutorials"
     weight = 20
 
   [[menu.main]]
-    name = "Examples"
-    pageRef = "/business-examples"
-    weight = 30
-
-  [[menu.main]]
     name = "Prompts"
     pageRef = "/prompt-library"
-    weight = 40
+    weight = 30
 
   [[menu.main]]
-    name = "Reference"
-    pageRef = "/reference"
-    weight = 50
-
-  [[menu.more]]
-    name = "Concepts"
-    pageRef = "/concepts"
-    weight = 10
-
-  [[menu.more]]
-    name = "Security"
-    pageRef = "/security"
-    weight = 20
-
-  [[menu.more]]
-    name = "About"
-    pageRef = "/about"
-    weight = 30
+    name = "Examples"
+    pageRef = "/business-examples"
+    weight = 40

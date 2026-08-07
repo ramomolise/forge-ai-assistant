@@ -8,7 +8,7 @@
 
   {{ .Content }}
 
-  {{ if .Pages }}
+  {{ if and .Pages (ne .Params.show_children false) }}
     <ul class="page-list">
       {{ range .Pages.ByWeight }}
         <li>
