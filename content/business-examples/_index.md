@@ -1,12 +1,18 @@
 ---
 title: "Business Examples"
-description: "Example AI assistant designs for South African small businesses."
+description: "A real sanitised beta case study and fictional assistant designs for South African small businesses."
 weight: 50
 ---
 
-Business examples show how discovery notes can become a structured assistant
-brief with goals, boundaries, escalation rules, proposed tools, risks, and
-tests.
+Business examples show how a focused assistant can be described with clear
+goals, boundaries, escalation rules, proposed tools, risks and tests.
+
+## Featured case study
+
+Read [Inside the MFDA Forge closed beta](mfda-forge-beta/) for a real but
+sanitised account of how Forge answers approved dance-class questions, submits
+unconfirmed trial requests and hands decisions back to Ramo. It shares verified
+patterns and lessons without publishing the private implementation.
 
 They are educational designs, not production-ready systems. They do not
 configure Hermes, connect a messaging service, or implement business tools.
@@ -22,7 +28,7 @@ Make a private copy, adapt it with authorised reviewers, and keep customer
 records and credentials out of prompts and repository files.
 {{< /warning >}}
 
-## First example
+## Fictional design example
 
 Read [Design a fictional salon assistant](salon-assistant/) to see how a
 business-discovery brief can define a small, reviewable assistant scope.

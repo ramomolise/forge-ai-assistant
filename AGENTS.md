@@ -2,7 +2,15 @@
 
 ## Project identity
 
-This repository is an educational Hugo website and open-source reference project for South African entrepreneurs who want to build simple, secure AI assistants using Hermes.
+This repository is the public home of **Forge AI Assistant**, an educational Hugo website and open-source reference project for South African entrepreneurs who want to build simple, secure AI assistants using Hermes.
+
+Use the three project names consistently:
+
+* **Forge** is the working AI WhatsApp assistant privately tested by Motion Foundry Dance Academy.
+* **Hermes** is the underlying agent software that coordinates approved knowledge and limited tools.
+* **Build with Hermes ZA** is the educational learning path within the wider Forge AI Assistant project.
+
+The public repository contains the learning site and sanitised reusable material. It does not contain the complete private MFDA deployment. Describe the intended core as self-hosted or operator-managed only when also making clear that external messaging and infrastructure providers remain involved.
 
 The project produces two connected outputs:
 
