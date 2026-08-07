@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section>
+<section class="page-shell">
   <h1>{{ .Title }}</h1>
 
   {{ with .Description }}
@@ -9,7 +9,7 @@
   {{ .Content }}
 
   {{ if .Pages }}
-    <ul>
+    <ul class="page-list">
       {{ range .Pages.ByWeight }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>

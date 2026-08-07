@@ -1,51 +1,51 @@
 ---
-title: "Build with Hermes ZA"
-description: "Learn how the parts of a simple, secure AI assistant fit together before following future build guidance."
+title: "Build a practical AI assistant for your small business"
+description: "A South African, WhatsApp-first learning project based on lessons from the private MFDA Forge closed beta."
 ---
 
-This project teaches South African entrepreneurs how the parts of a practical
-AI assistant fit together. It starts with plain-English explanations, then will
-progress towards reviewed tutorials and reusable reference material.
+Follow a South African, WhatsApp-first learning project based on lessons from a
+real closed beta. Learn how to design a focused assistant, protect customer
+information, restrict its actions, test realistic conversations and hand
+control back to a person.
 
-It is intended for small-business owners and operators who use WhatsApp to
-communicate with customers and may have little experience with Linux, servers,
-APIs, or AI systems.
+{{< home-actions >}}
 
-## What you will eventually build
+{{< project-status >}}
 
-The planned learning path leads towards a narrowly scoped assistant that can
-receive a customer message through WhatsApp, use approved business information,
-call only approved business tools, and hand the conversation to a person when
-it cannot help safely.
+## Three names, one project
 
-This is the intended outcome of the curriculum. The repository does not yet
-contain a complete or verified implementation.
+- **Forge** is the working AI WhatsApp assistant in a private closed beta with
+  Motion Foundry Dance Academy (MFDA). Its live configuration and data are not
+  public.
+- **Hermes** is the underlying agent software. In plain language, it coordinates
+  the assistant's approved instructions, business knowledge and limited tools.
+- **Build with Hermes ZA** is this project's educational learning path. It turns
+  sanitised lessons from Forge into understandable guidance for South African
+  entrepreneurs.
 
-{{< expected-output >}}
-After the foundational lessons, you should be able to describe each part of the intended system and explain where customer data, credentials, and business decisions require protection.
-{{< /expected-output >}}
+## Choose your path
 
-## What this project is
+{{< path-grid >}}
 
-This repository contains two connected learning resources:
+## How the intended system works
 
-- a Hugo website containing explanations and tutorials
-- a reference area that will contain reviewed templates and examples
+A customer sends a message through WhatsApp. A protected web address called a
+webhook receives it. Hermes then uses reviewed business information or a
+narrowly restricted tool to prepare a response. When the request is uncertain,
+sensitive or outside its role, the assistant hands control back to a person.
 
-The repository is an educational open-source project. It is not a hosted
-assistant service, and it does not connect your business to any external
-provider.
+{{< system-flow >}}
 
 {{< security >}}
-Never add production credentials, customer information, private server reports,
-or VPS command histories to this repository. Private evidence must stay outside
-Git and must be sanitised, generalised, and independently verified before it
-influences public documentation.
+The assistant core may run on infrastructure managed by its operator, but the
+whole system is not fully self-hosted. WhatsApp Cloud API and other external
+providers remain involved. Never copy production credentials, customer data or
+private configuration into this public repository.
 {{< /security >}}
 
-## Begin with the system map
+## Learn from the closed beta
 
-Go to [Start Here](/start-here/) for the audience, prerequisites, boundaries,
-and planned learning path. Then read
-[Understand the intended system architecture](/start-here/architecture/) to see
-how the customer-facing and technical parts are expected to relate.
+The [MFDA Forge case study](/business-examples/mfda-forge-beta/) explains what
+Forge may do, what stays under human control and what testing has taught us. It
+shares patterns and lessons—not customer conversations, production prompts,
+credentials, endpoints or live business configuration.

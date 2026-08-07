@@ -1,6 +1,6 @@
 baseURL = "https://ramomolise.github.io/forge-ai-assistant/"
 languageCode = "en-za"
-title = "Build with Hermes ZA"
+title = "Forge AI Assistant"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 
@@ -8,7 +8,7 @@ enableRobotsTXT = true
   pagerSize = 10
 
 [params]
-  description = "Practical tutorials for South African entrepreneurs building simple AI assistants with Hermes."
+  description = "An open-source learning project informed by a private South African small-business AI assistant beta."
   githubRepository = "https://github.com/ramomolise/forge-ai-assistant"
 
 [markup]
@@ -22,41 +22,41 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name = "Start Here"
+    name = "Start"
     pageRef = "/start-here"
     weight = 10
 
   [[menu.main]]
-    name = "Tutorials"
+    name = "Build"
     pageRef = "/tutorials"
     weight = 20
 
   [[menu.main]]
-    name = "Concepts"
-    pageRef = "/concepts"
+    name = "Examples"
+    pageRef = "/business-examples"
     weight = 30
 
   [[menu.main]]
-    name = "Prompt Library"
+    name = "Prompts"
     pageRef = "/prompt-library"
     weight = 40
 
   [[menu.main]]
-    name = "Business Examples"
-    pageRef = "/business-examples"
-    weight = 50
-
-  [[menu.main]]
-    name = "Security"
-    pageRef = "/security"
-    weight = 60
-
-  [[menu.main]]
     name = "Reference"
     pageRef = "/reference"
-    weight = 70
+    weight = 50
 
-  [[menu.main]]
+  [[menu.more]]
+    name = "Concepts"
+    pageRef = "/concepts"
+    weight = 10
+
+  [[menu.more]]
+    name = "Security"
+    pageRef = "/security"
+    weight = 20
+
+  [[menu.more]]
     name = "About"
     pageRef = "/about"
-    weight = 80
+    weight = 30
